@@ -7,10 +7,20 @@ TruthTable::TruthTable(const int x) {
 	colCount = x;
 	rowCount = pow(2, x);
 
+	table = new bool*[rowCount];
+
+	for (int i = 0; i < rowCount; ++i) {
+		table[i] = new bool[colCount];
+	}
+
+	/*
+	colCount = x;
+	rowCount = pow(2, x);
+
 	table = new int*[rowCount];
 	for (int i = 0; i < rowCount; ++i)
 		table[i] = new int[colCount];
-
+	*/
 	cout << "Making TruthTable" << endl;
 }
 
@@ -21,6 +31,11 @@ TruthTable::TruthTable(const TruthTable& table) {
 
 TruthTable::~TruthTable() {
 
+	for (int i = 0; i < rowCount; ++i) {
+	delete[] table[i];
+	}
+	delete[] table;
+		/*
 	for (int i = 0; i < rowCount; i++) {
 		for (int j = 0; j < colCount; j++) {
 			//delete table[i][j]; // delete stored pointer
@@ -28,7 +43,7 @@ TruthTable::~TruthTable() {
 		delete[] table[i]; // delete sub array
 	}
 	delete[] table; //delete outer array
-	table = NULL;
+	//table = NULL;
 
 	/*
 	for (int i = 0; i < colCount; i++)

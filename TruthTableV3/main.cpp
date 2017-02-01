@@ -9,7 +9,7 @@ int main() {
 
 	TruthTable table(COL);
 
-	table.printTable();
+	//table.printTable();
 
 	getchar();
 	getchar();

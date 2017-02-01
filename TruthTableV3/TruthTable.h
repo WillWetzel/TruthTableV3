@@ -7,13 +7,13 @@ using namespace std;
 
 class TruthTable {
 public:
-	TruthTable(const int x = 0);		//Constructor
+	TruthTable(const int x = 0);						//Constructor
 	TruthTable(const TruthTable& t);					//Copy Constructor
 	~TruthTable();
 
 	//Getters
-	//inline int getCols() { return x; }
-	//inline int getRows() { return y; }
+	inline int getCols() { return colCount; }
+	inline int getRows() { return rowCount; }
 
 	void printTable();
 
@@ -23,7 +23,8 @@ public:
 protected:
 	int colCount;
 	int rowCount;
-	int** table;
+	bool** table;
+	//int table[colCount][rowCount];
 
 	//int table[2][4] = { 0 };
 	//int table[i][j] = { 0 };
