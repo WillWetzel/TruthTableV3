@@ -21,6 +21,18 @@
     <ClInclude Include="ANDTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NANDTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NORTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ORTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XORTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TruthTable.cpp">

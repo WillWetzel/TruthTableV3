@@ -111,7 +111,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ANDTable.h" />
+    <ClInclude Include="NANDTable.h" />
+    <ClInclude Include="NORTable.h" />
+    <ClInclude Include="ORTable.h" />
     <ClInclude Include="TruthTable.h" />
+    <ClInclude Include="XORTable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ANDTable.cpp" />
